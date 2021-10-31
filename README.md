@@ -3,7 +3,7 @@
 1. clone repository
 
 ```
-git clone https://github.com/shubh22121/memehub/ 
+git clone https://github.com/shubh22121/memehub.git
 ```
 
 2. install requirements
