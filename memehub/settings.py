@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-=9tlukrz3=#g#6c1w6n7!0d3-38&48@)yge2bqbq!s4gyum#=m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','memes-hub.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','memes-hub.herokuapp.com']
 
 
 # Application definition
@@ -106,15 +106,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = '/media/'
+STATICFILES_DIRS = [ os.path.join(BASE_DIR,'static') ]
 
-# Default primary key field type
+# STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
+# MEDIA_URL = '/media/'
+
+# Default primary key field type    
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
