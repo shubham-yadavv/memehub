@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-=9tlukrz3=#g#6c1w6n7!0d3-38&48@)yge2bqbq!s4gyum#=m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','memes-hub.herokuapp.com']
 
 
 # Application definition
