@@ -16,13 +16,21 @@
 <body>
     <div class="container">
         <header class="header">
+           
             <div class="left">Memehub</div>
+            
             <div class="mid">Getting Bored, Explore Memes!</div>
             <div class="right">CIVO</div>
 
         </header>
         <input type="checkbox" id="check">
         <nav class="navbar">
+            <div class="x">
+                <a href="#" target="_blank"><span class="fas fa-share-alt"></span></a>
+                <a href="#" target="_blank"><span class="fab fa-pinterest"></span></a>
+                <a href="#" target="_blank"><span class="fab fa-whatsapp"></span></a>
+                <a href="#" target="_blank"><span class="fas fa-arrow-circle-down"></span></a>
+            </div>
             <div class="search_box">
                 <input type="search" placeholder="Search here">
                 <span class="fa fa-search"></span>
@@ -37,58 +45,155 @@
                 <span class="fa fa-bars" id="bars"></span>
                 <span class="fa fa-times" id="times"></span>
             </label>
-           
+
 
         </nav>
-        
+
 
         <section></section>
-        <main>Main</main>
-        <div id="sidebar">
-            <div class="text">Categories</div>
+        <main>
+
+
             <ul>
-               
-            <li><a href="#">Coding Memes</a>
-                <ul>
-                    <li><a href="#">Item-1</a></li>
-                    <li><a href="#">item-2</a></li>
-                    
-                </ul>
-            </li>
-            <li><a href="#">Covid Memes</a>
-                <ul>
-                    <li><a href="#">Item-1</a></li>
-                    <li><a href="#">item-2</a></li>
-                  
-                </ul>
-            </li>
-            <li><a href="#">Series Memes</a>
-                <ul>
-                    <li><a href="#">Item-1</a></li>
-                    <li><a href="#">item-2</a></li>
-                  
-                </ul>
-               
-            </li>
-            <li><a href="#">Simpsons Memes</a>
-                <ul>
-                    <li><a href="#">Item-1</a></li>
-                    <li><a href="#">item-2</a></li>
-                  
-                </ul>
+                <li class="sub-menu"><a href="#">Coding Memes</a>
+                    <ul>
+                        <li><a href="#">Meme 1</a></li>
+                        <li><a href="#">Meme 2</a></li>
+                        <li><a href="#">Meme 3</a></li>
+
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="#">Covid Memes</a>
+                    <ul>
+                        <li><a href="#">Meme 1</a></li>
+                        <li><a href="#">Meme 2</a></li>
+                        <li><a href="#">Meme 3</a></li>
+
+                    </ul>
+                </li>
+                </li>
+                <li class="sub-menu"><a href="#">Series Memes</a>
+                    <ul>
+                        <li><a href="#">Meme 1</a></li>
+                        <li><a href="#">Meme 2</a></li>
+                        <li><a href="#">Meme 3</a></li>
+
+                    </ul>
+                </li>
+                </li>
+                <li class="sub-menu"><a href="#">simpsons Memes</a>
+                    <ul>
+                        <li><a href="#">Meme 1</a></li>
+                        <li><a href="#">Meme 2</a></li>
+                        <li><a href="#">Meme 3</a></li>
+
+                    </ul>
+                </li>
+                </li>
+            </ul>
+
+
             
 
-               
-            </li>
 
-               
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            function toggleMenu(){
+                let sidebar = document.querySelector('#sidebar');
+                let toggle = document.querySelector('.toggle');
+                sidebar.classList.toggle('active');
+                toggle.classList.toggle('active');
+            }
+
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('main').toggleClass('active');
+                })
+                $('ul li').click(function(){
+                    $(this).toggleClass('active');
+                })
+
+            })
+        </script>
+           
+        <div id="sidebar">
+            <div class="w">Categories</div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-laptop"></i></span>
+                        <span class="title">Coding Memes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-virus"></i></span>
+                        <span class="title">Covid Memes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="far fa-grin-squint"></i></span>
+                        <span class="title">Series Memes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-secret"></i></span>
+                        <span class="title">Simpsons Memes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+
+                
             </ul>
         </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
 
         <div id="content1">Content1</div>
         <div id="content2">Content2</div>
         <div id="content3">Content3</div>
-        <footer>Footer</footer>
+        <footer>
+            <div class="main-content">
+                <div class="left-box">
+                    <h2>Follow Us</h2>
+                    <div class="social">
+                        <a href="#" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#" target="_blank"><span class="fab fa-twitter"></span></a>
+                        <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+                        <a href="#" target="_blank"><span class="fab fa-youtube"></span></a>
+                        <a href="#" target="_blank"><span class="fab fa-tumblr"></span></a>
+                    </div>
+                </div>
+                <div class="center-box">
+                    <h2>Get in touch with us</h2>
+                    <div class="content">
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">memehub@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <h2><b style="color:#4185f4;"><u> Sign up </u></b> for trendy memes</h2>
+                    <div class="content">
+                        <input type="checkbox" id="click">
+                        <label  class="btn-1" for="click">Suscribe</label>
+                        <div class="field">
+                            <input type="text" placeholder="Email Address">
+                            <label for="click" class="btn-2">Suscribe</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
     </div>
 
 </body>
