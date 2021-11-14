@@ -10,7 +10,7 @@ from django.db import IntegrityError
 url = 'https://www.reddit.com/r/memes/new/'
 
 ## To run locally 
-# chrome_driver_path = '.......memescraper/static/chromedriver'
+# chrome_driver_path = '.......memeub/static/chromedriver'
 
 # chrome_options = Options()
 # chrome_options.add_argument("--headless")
@@ -20,9 +20,9 @@ url = 'https://www.reddit.com/r/memes/new/'
 # 	executable_path=chrome_driver_path,
 # 	options=chrome_options
 # 	)
-# driver = webdriver
+driver = webdriver
 
-## To run on Heroku
+# To run on Heroku
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 chrome_options.add_argument("--headless")

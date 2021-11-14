@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memes</title>
+    <title>memehub</title>
     <link rel="stylesheet" href="static/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -54,7 +55,7 @@
         <main>
 
 
-            <ul>
+            <!-- <ul>
                 <li class="sub-menu"><a href="#">Coding Memes</a>
                     <ul>
                         <li><a href="#">Meme 1</a></li>
@@ -90,7 +91,7 @@
                     </ul>
                 </li>
                 </li>
-            </ul>
+            </ul> -->
 
 
             
@@ -159,12 +160,28 @@
         <div id="content1">
             <a href="/random"><img src='static/dev1.jpeg'/></a>
             <a href="/random"><img src='static/think.jpeg'/></a>
+            <div> <h1> &#8205;  </h1> </div>
+              <div> <h1> &#8205;  </h1> </div>
+              <div> <h1> &#8205;  </h1> </div>
+              <div> <h1> &#8205;  </h1> </div>
         </div>
         <div id="content2">Content2
             <a href="/random"><img src='static/confused.jpeg'/></a>
             <a href="/random"><img src='static/drake.jpeg'/></a>
         </div>
         <!-- <div id="content3">Content3</div> -->
+        {% for post in posts %}
+        <div class="tile infinite-item">
+        <a href="{{post.image}}"><img  src="{{post.image}}"/></a>
+        <div> <h1> &#8205;  </h1> </div>
+        <div> <h1> &#8205;  </h1> </div>
+        <div> <h1> &#8205;  </h1> </div>
+        <div> <h1> &#8205;  </h1> </div>
+        <div>
+          <h1  >See fullscreen </h1>
+        </div>                
+       </div>
+         {% endfor %}
         <footer>
             <div class="main-content">
                 <div class="left-box">
